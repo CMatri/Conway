@@ -17,7 +17,6 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class Main extends Canvas implements MouseListener, KeyListener {
-	private boolean logicRequiredThisLoop;
 	private boolean gameRunning = true;
 	private boolean startAnim = false;
 	private static JPanel panel;
@@ -46,10 +45,6 @@ public class Main extends Canvas implements MouseListener, KeyListener {
 			}
 		});
 		createBufferStrategy(2);
-	}
-
-	public void updateLogic() {
-		logicRequiredThisLoop = true;
 	}
 
 	public void gameLoop() {
